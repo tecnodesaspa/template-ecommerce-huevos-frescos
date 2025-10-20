@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Huevos Frescos - Restablecer Contraseña</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2a60d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221c10",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-input::placeholder {
+            color: #a39e93;
+        }
+        .dark .form-input::placeholder {
+            color: #7a7161;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="border-b border-primary/20 dark:border-primary/30">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h1 class="text-2xl font-bold text-background-dark dark:text-background-light">Huevos Frescos</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Productos</a>
+<a class="text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-background-dark dark:text-background-light font-bold transition-colors">
+                            Iniciar sesión
+                        </button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md space-y-8">
+<div class="text-center">
+<h2 class="text-4xl font-extrabold text-background-dark dark:text-background-light">¿Olvidaste tu contraseña?</h2>
+<p class="mt-4 text-lg text-background-dark/70 dark:text-background-light/70">
+                        No hay problema. Ingresa tu correo electrónico a continuación y te enviaremos un enlace para restablecerla.
+                    </p>
+</div>
+<form action="#" class="mt-8 space-y-6" method="POST">
+<input name="remember" type="hidden" value="true"/>
+<div class="rounded-lg shadow-sm -space-y-px">
+<div>
+<label class="sr-only" for="email-address">Correo electrónico</label>
+<input autocomplete="email" class="form-input appearance-none rounded-lg relative block w-full px-4 py-4 border border-primary/30 bg-background-light dark:bg-background-dark text-background-dark dark:text-background-light focus:outline-none focus:ring-primary focus:border-primary focus:z-10 text-base" id="email-address" name="email" placeholder="tu@email.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<button class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-base font-bold rounded-lg text-background-dark dark:text-background-dark bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors" type="submit">
+                            Enviar enlace de restablecimiento
+                        </button>
+</div>
+</form>
+<div class="hidden text-center p-4 rounded-lg bg-primary/10 border border-primary/20" id="confirmation-message">
+<p class="text-base text-background-dark dark:text-background-light">Si existe una cuenta con ese correo electrónico, hemos enviado un enlace para restablecer la contraseña.</p>
+</div>
+<p class="text-center text-sm text-background-dark/60 dark:text-background-light/60">
+                    ¿Recordaste tu contraseña?
+                    <a class="font-medium text-primary hover:text-primary/80 transition-colors" href="#">
+                        Inicia sesión
+                    </a>
+</p>
+</div>
+</main>
+</div>
+<script>
+        // Simple script to show confirmation message on form submit
+        const form = document.querySelector('form');
+        const confirmationMessage = document.getElementById('confirmation-message');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission for this demo
+            form.classList.add('hidden');
+            confirmationMessage.classList.remove('hidden');
+        });
+    </script>
+
+
+</body></html>

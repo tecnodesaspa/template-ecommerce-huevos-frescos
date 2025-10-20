@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Huevos Frescos - Página de Producto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2a60d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221c10",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23f2a60d' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-neutral-800 dark:text-neutral-200">
+    <div class="min-h-screen flex flex-col">
+          <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-6">
+            <a class="flex items-center gap-2" href="/template-ecommerce-huevos-frescos/">
+              <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+              </svg>
+              <h1 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Fresh Eggs</h1>
+            </a>
+            <nav class="hidden md:flex items-center gap-6" id="navMenu">
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/">Inicio</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/nosotros/">Acerca de nosotros</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/contacto/">Contacto</a>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="/template-ecommerce-huevos-frescos/carrito/"
+              class="flex items-center justify-center rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+              <span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100"> shopping_cart </span>
+            </a>
+            <a href="/template-ecommerce-huevos-frescos/perfil/"
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+            </a>
+            <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+        <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="mb-6 text-sm text-neutral-600 dark:text-neutral-400">
+                <a class="hover:text-primary dark:hover:text-primary" href="#">Productos</a>
+                <span class="mx-2">/</span>
+                <span class="text-neutral-800 dark:text-neutral-200">Huevos de Corral</span>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-xl bg-background-light">
+                        <div class="w-full h-full bg-center bg-no-repeat bg-cover"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9rO-H53DBy4yzanelL8PXMW4iH2g-RY4a_eTfIlZIWd3TIbdflDzkKn1jvbxCBVsAA9uQZ6f-jwQdTHQmSVOTuU3LjUTmL0Vpia7DvXeWjXQxa3VrkEDsRYq1JQEY21eqOBZ-3Lu-4ueFKW4GzikurUcYuOjErYn0rM9zq6m02ZIznR1iI-QXbfWVmaAMaA9mp1R2-bexI4ok39yJm8gfFNxAgnygx0ekr-xQmFObbNkaIy7ADyF7qchvAIFNsiTPdQqJNHbqnLY");'>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-4xl font-bold tracking-tight text-neutral-900 dark:text-white">Huevos de Corral</h1>
+                    <p class="mt-2 text-lg text-neutral-600 dark:text-neutral-400">Una docena de huevos frescos de
+                        gallinas criadas en libertad.</p>
+                    <div class="mt-6">
+                        <p class="text-3xl font-bold text-primary">$4.99</p>
+                    </div>
+                    <div class="mt-6 space-y-4 text-base text-neutral-700 dark:text-neutral-300">
+                        <p>Nuestros huevos de corral provienen de gallinas que tienen acceso libre a pastos al aire
+                            libre, lo que resulta en huevos más nutritivos y sabrosos. Ideales para cocinar, hornear o
+                            disfrutar solos.</p>
+                    </div>
+                    <div class="mt-8">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-end">
+                            <div>
+                                <label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2"
+                                    for="quantity">Cantidad</label>
+                                <select
+                                    class="form-select w-full appearance-none rounded-lg border border-primary/30 dark:border-primary/40 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary text-neutral-800 dark:text-neutral-200 h-12 px-4"
+                                    id="quantity" name="quantity">
+                                    <option>1 Docena</option>
+                                    <option>2 Docenas</option>
+                                    <option>3 Docenas</option>
+                                    <option>Media Docena</option>
+                                </select>
+                            </div>
+                            <button
+                                class="w-full flex items-center justify-center h-12 px-6 bg-primary text-black font-bold rounded-lg hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary">
+                                <span class="material-symbols-outlined mr-2">add_shopping_cart</span>
+                                <span>Añadir al Carrito</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h2 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-8">Reseñas de Clientes
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div
+                            class="bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/10 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="flex-shrink-0">
+                                    <img alt="Laura M. avatar" class="h-10 w-10 rounded-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeoEaLNE4rtgfNPEElOS7l1Rt4AjZinjXfbq50ovW7S16lwyZhjY8hhAY2CM5Wnx0tS5ltXOXxyEduqS37Bw8fhuH-RJUj4_wuIIDHDY6AW3K2QbJVkn0uQMXhakCwQkvbD2pPRrZgvyb2VhYC-k_23BNmABstG5YLEQlkNE5AcztuCXl4Rboq1ODUm3Y6t8ye5P1YonvIVTiXkYZuSOib9MyppKLRxmVXF1_hyWlafg2C6URW6dMvYNeCGqJefguW4Uf8aUC2fIk" />
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-base font-bold text-neutral-900 dark:text-white">Laura M.</div>
+                                    <div class="flex items-center mt-1">
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-neutral-700 dark:text-neutral-300">¡Los mejores huevos que he probado! El
+                                sabor es increíblemente rico y las yemas tienen un color naranja intenso.
+                                Definitivamente volveré a comprar.</p>
+                        </div>
+                        <div
+                            class="bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/10 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="flex-shrink-0">
+                                    <img alt="Carlos G. avatar" class="h-10 w-10 rounded-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAts0GV-UM7J5Tvpb4M_XcqjQJ8pblRC1mVU70OwI9VBMBvHINPuEaSBvu_Rti2ZxtyvUhNaxsdD8OXvEaD_uwJfOfRea0LHvFE-HZHtcUQwgv7qWoyy_d7Z7HuE5qK736xWCbdWnVe7Kzm7-RzUReLYVercAw-kQzKkZqjpKwEIu17xMXlBPNCvi723NE4XWATgVzG1LwyfPXXsBAsyI9YfNiDndwKRgjWuTcUKBEhJi2Ko5DIYwKl8Q8AHl8nytnLQHAK_k4SmSQ" />
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-base font-bold text-neutral-900 dark:text-white">Carlos G.</div>
+                                    <div class="flex items-center mt-1">
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span class="material-symbols-outlined text-primary text-base">star</span>
+                                        <span
+                                            class="material-symbols-outlined text-neutral-400 dark:text-neutral-600 text-base">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-neutral-700 dark:text-neutral-300">Muy buenos huevos, se nota la calidad. El
+                                empaque era seguro y llegaron en perfecto estado. Solo desearía que hubiera más opciones
+                                de cantidad.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/10 rounded-lg p-6">
+                            <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-4">Deja tu reseña</h3>
+                            <form action="#" class="space-y-6" method="POST">
+                                <div>
+                                    <label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                        for="rating">Tu valoración</label>
+                                    <div class="mt-1 flex items-center">
+                                        <button class="group" type="button">
+                                            <span
+                                                class="material-symbols-outlined text-neutral-400 dark:text-neutral-600 group-hover:text-primary text-2xl transition-colors">star</span>
+                                        </button>
+                                        <button class="group" type="button">
+                                            <span
+                                                class="material-symbols-outlined text-neutral-400 dark:text-neutral-600 group-hover:text-primary text-2xl transition-colors">star</span>
+                                        </button>
+                                        <button class="group" type="button">
+                                            <span
+                                                class="material-symbols-outlined text-neutral-400 dark:text-neutral-600 group-hover:text-primary text-2xl transition-colors">star</span>
+                                        </button>
+                                        <button class="group" type="button">
+                                            <span
+                                                class="material-symbols-outlined text-neutral-400 dark:text-neutral-600 group-hover:text-primary text-2xl transition-colors">star</span>
+                                        </button>
+                                        <button class="group" type="button">
+                                            <span
+                                                class="material-symbols-outlined text-neutral-400 dark:text-neutral-600 group-hover:text-primary text-2xl transition-colors">star</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                        for="comment">Tu reseña</label>
+                                    <div class="mt-1">
+                                        <textarea
+                                            class="w-full appearance-none rounded-lg border border-primary/30 dark:border-primary/40 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary text-neutral-800 dark:text-neutral-200 px-4 py-2"
+                                            id="comment" name="comment" required="" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <button
+                                        class="w-full sm:w-auto flex items-center justify-center h-12 px-6 bg-primary text-black font-bold rounded-lg hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary"
+                                        type="submit">
+                                        Enviar Reseña
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../main.js"></script>
+</body>
+
+</html>

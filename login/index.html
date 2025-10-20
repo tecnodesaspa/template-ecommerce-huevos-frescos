@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Huevos Frescos - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2a60d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#221c10",
+            "text-light": "#221c10",
+            "text-dark": "#f8f7f5",
+            "subtle-light": "#e0dcd5",
+            "subtle-dark": "#393121",
+            "placeholder-light": "#8a7c60",
+            "placeholder-dark": "#a19379",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col min-h-screen">
+<header class="border-b border-subtle-light dark:border-subtle-dark">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-xl font-bold">Fresh Eggs</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Shop</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary/20 hover:bg-primary/30 text-text-light dark:text-text-dark font-bold text-sm px-4 py-2 rounded-lg transition-colors">
+            Cart (0)
+          </button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md space-y-8">
+<div>
+<h2 class="mt-6 text-center text-3xl font-extrabold">Log in to your account</h2>
+<p class="mt-2 text-center text-sm text-placeholder-light dark:text-placeholder-dark">
+            Or <a class="font-medium text-primary hover:text-primary/80" href="#">create an account</a>
+</p>
+</div>
+<form action="#" class="mt-8 space-y-6" method="POST">
+<div class="rounded-xl shadow-sm -space-y-px">
+<div>
+<label class="sr-only" for="email-address">Email or Username</label>
+<input class="appearance-none rounded-t-lg relative block w-full px-3 py-4 border border-subtle-light dark:border-subtle-dark placeholder-placeholder-light dark:placeholder-placeholder-dark bg-background-light dark:bg-background-dark focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm" id="email-address" name="email" placeholder="Email or Username" required="" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="password">Password</label>
+<input autocomplete="current-password" class="appearance-none rounded-b-lg relative block w-full px-3 py-4 border border-subtle-light dark:border-subtle-dark placeholder-placeholder-light dark:placeholder-placeholder-dark bg-background-light dark:bg-background-dark focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm" id="password" name="password" placeholder="Password" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-end">
+<div class="text-sm">
+<a class="font-medium text-primary hover:text-primary/80" href="#">
+                Forgot your password?
+              </a>
+</div>
+</div>
+<div>
+<button class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-bold rounded-lg text-background-dark bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors" type="submit">
+              Log In
+            </button>
+</div>
+</form>
+</div>
+</main>
+</div>
+
+</body></html>

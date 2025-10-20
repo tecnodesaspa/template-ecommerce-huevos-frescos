@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Huevos Frescos - Términos y Condiciones</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2a60d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#221c10",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-background-dark dark:text-background-light">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-6">
+            <a class="flex items-center gap-2" href="/template-ecommerce-huevos-frescos/">
+              <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+              </svg>
+              <h1 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Fresh Eggs</h1>
+            </a>
+            <nav class="hidden md:flex items-center gap-6" id="navMenu">
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/">Inicio</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/nosotros/">Acerca de nosotros</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/contacto/">Contacto</a>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="/template-ecommerce-huevos-frescos/carrito/"
+              class="flex items-center justify-center rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+              <span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100"> shopping_cart </span>
+            </a>
+            <a href="/template-ecommerce-huevos-frescos/perfil/" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+            </a>
+            <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary">Términos y condiciones</h1>
+            <p class="mt-4 text-lg text-background-dark/70 dark:text-background-light/70">Última actualización: 26 de octubre de 2023</p>
+          </div>
+          <div class="space-y-10">
+            <div class="prose prose-lg max-w-none text-background-dark/90 dark:text-background-light/90">
+              <p class="lead">
+                ¡Bienvenido a Fresh Eggs! Al acceder o utilizar nuestro sitio web y servicios, usted acepta estar sujeto a estos Términos y condiciones. Léalos detenidamente antes de utilizar nuestros servicios. Si no está de acuerdo con ninguna parte de estos términos, no debe utilizar nuestro sitio web o servicios.
+              </p>
+              <div class="space-y-8">
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">1. General Terms</h2>
+                  <p>Estos Términos y Condiciones rigen su uso del sitio web y los servicios de Fresh Eggs. Nos reservamos el
+                    derecho de modificar estos términos en cualquier momento, y dichas modificaciones serán efectivas
+                    inmediatamente después de publicar los términos actualizados en nuestro sitio web. Su uso continuado
+                    del sitio web después de cualquier cambio constituye su aceptación de los nuevos Términos y
+                    Condiciones.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">2. Responsabilidades del Usuario</h2>
+                  <p>Como usuario de Fresh Eggs, usted es responsable de proporcionar información precisa y completa al crear una cuenta o realizar un pedido. También es responsable de mantener la confidencialidad de la información de su cuenta y de todas las actividades que ocurran bajo su cuenta. Acepta no utilizar nuestro sitio web para ningún propósito ilegal o prohibido.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">3. Información y Precios de los Productos
+                  </h2>
+                  <p>Nos esforzamos por proporcionar información precisa sobre los productos, incluidas descripciones, imágenes y precios.
+                    Sin embargo, no garantizamos que las descripciones de los productos u otro contenido en nuestro sitio web sean precisos,
+                    completos, fiables, actuales o libres de errores. Los precios están sujetos a cambios sin previo aviso.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">4. Pedidos y Pagos</h2>
+                  <p>Al realizar un pedido a través de nuestro sitio web, usted está haciendo una oferta para comprar los productos. Nosotros
+                    nos reservamos el derecho de rechazar o cancelar cualquier pedido por cualquier motivo, incluidas limitaciones en las cantidades
+                    disponibles para la compra, inexactitudes o errores en la información del producto o de precios. El pago debe ser
+                    recibido antes de que un pedido sea aceptado.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">5. Envío y Entrega</h2>
+                  <p>Nos proponemos entregar su pedido de manera rápida y eficiente. Los tiempos de entrega pueden variar según su
+                    ubicación y la disponibilidad de productos. No somos responsables de los retrasos causados por factores
+                    fuera de nuestro control, como condiciones climáticas o problemas con el transportista.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">6. Devoluciones y Reembolsos</h2>
+                  <p>Debido a la naturaleza perecedera de nuestros productos, generalmente no aceptamos devoluciones. Sin embargo, si usted
+                    recibe productos dañados o defectuosos, contáctenos dentro de las 24 horas posteriores a la entrega con
+                    evidencia fotográfica, y evaluaremos la situación y proporcionaremos una solución adecuada, que puede
+                    incluir un reemplazo o reembolso.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">7. Limitación de Responsabilidad</h2>
+                  <p>En la máxima medida permitida por la ley, Fresh Eggs no será responsable de ningún daño indirecto,
+                    incidental, especial, consecuente o punitivo, o de cualquier pérdida de ganancias o ingresos, ya sea
+                    incurridos directa o indirectamente, o cualquier pérdida de datos, uso, buena voluntad u otras pérdidas
+                    intangibles, que resulten de (a) su uso o incapacidad para usar nuestro sitio web o servicios; (b) cualquier
+                    acceso no autorizado o uso de nuestros servidores y/o cualquier información personal almacenada en ellos; (c)
+                    cualquier interrupción o cese de transmisión hacia o desde nuestro sitio web; (d) cualquier error, virus,
+                    caballos de Troya o similares que puedan ser transmitidos a través de nuestro sitio web por un tercero; (e)
+                    cualquier error u omisión en cualquier contenido o por cualquier pérdida o daño incurrido como resultado de
+                    su uso de cualquier contenido publicado, enviado por correo electrónico, transmitido o puesto a disposición de
+                    cualquier otra manera a través de nuestro sitio web; y/o (f) la conducta difamatoria, ofensiva o ilegal de
+                    cualquier tercero.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">8. Ley Aplicable</h2>
+                  <p>Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes de la
+                    jurisdicción en la que Fresh Eggs tiene su sede, sin tener en cuenta sus disposiciones sobre conflictos de leyes.</p>
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold mb-4 border-l-4 border-primary pl-4">9. Contáctenos</h2>
+                  <p>Si tiene alguna pregunta o inquietud sobre estos Términos y Condiciones, comuníquese con nosotros en <a
+                      class="text-primary hover:underline"
+                      href="mailto:support@fresheggs.com">soporte@huevosfrescos.com</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>

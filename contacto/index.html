@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Huevos Frescos - Contacto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FFC107",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#221c10",
+                        "text-light": "#333333",
+                        "text-dark": "#FAFAFA",
+                        "secondary": "#8D6E63",
+                        "accent": "#8BC34A",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                <div class="container mx-auto px-4">
+                    <div class="flex h-16 items-center justify-between">
+                        <div class="flex items-center gap-6">
+                            <a class="flex items-center gap-2" href="/template-ecommerce-huevos-frescos/">
+                                <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                <h1 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Fresh Eggs</h1>
+                            </a>
+                            <nav class="hidden md:flex items-center gap-6" id="navMenu">
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/">Inicio</a>
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/nosotros/">Acerca de nosotros</a>
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/contacto/">Contacto</a>
+                            </nav>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <a href="/template-ecommerce-huevos-frescos/carrito/"
+                                class="flex items-center justify-center rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                                <span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100"> shopping_cart
+                                </span>
+                            </a>
+                            <a href="/template-ecommerce-huevos-frescos/perfil/"
+                                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+                            </a>
+                            <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1 px-4 sm:px-10 lg:px-40 py-10">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <p class="text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">Contáctanos</p>
+                        <p class="text-[#8D6E63] dark:text-gray-400 text-lg mt-3">Estamos aquí para ayudarte. Envíanos
+                            tus preguntas o comentarios.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-md">
+                            <h3 class="text-2xl font-bold mb-6">Envíanos un Mensaje</h3>
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <label class="flex flex-col">
+                                        <p class="text-base font-medium leading-normal pb-2">Nombre</p>
+                                        <input
+                                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#e6e2db] dark:border-gray-600 bg-background-light dark:bg-gray-700 h-12 placeholder:text-gray-400 px-4 text-base font-normal leading-normal"
+                                            placeholder="Tu nombre" type="text" value="" />
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <p class="text-base font-medium leading-normal pb-2">Correo Electrónico</p>
+                                        <input
+                                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#e6e2db] dark:border-gray-600 bg-background-light dark:bg-gray-700 h-12 placeholder:text-gray-400 px-4 text-base font-normal leading-normal"
+                                            placeholder="tu@email.com" type="email" value="" />
+                                    </label>
+                                </div>
+                                <label class="flex flex-col">
+                                    <p class="text-base font-medium leading-normal pb-2">Número de Teléfono (opcional)
+                                    </p>
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#e6e2db] dark:border-gray-600 bg-background-light dark:bg-gray-700 h-12 placeholder:text-gray-400 px-4 text-base font-normal leading-normal"
+                                        placeholder="Tu número de teléfono" type="tel" value="" />
+                                </label>
+                                <label class="flex flex-col">
+                                    <p class="text-base font-medium leading-normal pb-2">Asunto</p>
+                                    <select
+                                        class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#e6e2db] dark:border-gray-600 bg-background-light dark:bg-gray-700 h-12 placeholder:text-gray-400 px-4 text-base font-normal leading-normal appearance-none bg-no-repeat bg-right"
+                                        style="background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27%238D6E63%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');">
+                                        <option value="general">Consulta General</option>
+                                        <option value="order">Problema con el Pedido</option>
+                                        <option value="product">Preguntas sobre el Producto</option>
+                                    </select>
+                                </label>
+                                <label class="flex flex-col">
+                                    <p class="text-base font-medium leading-normal pb-2">Mensaje</p>
+                                    <textarea
+                                        class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#e6e2db] dark:border-gray-600 bg-background-light dark:bg-gray-700 h-32 placeholder:text-gray-400 p-4 text-base font-normal leading-normal"
+                                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                                </label>
+                                <button
+                                    class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-text-light text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+                                    Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-md">
+                                <h3 class="text-2xl font-bold mb-6">Contacto Directo</h3>
+                                <div class="space-y-4 text-secondary dark:text-gray-300">
+                                    <div class="flex items-center gap-4">
+                                        <span class="material-symbols-outlined text-accent">call</span>
+                                        <span>+1 (555) 123-4567</span>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <span class="material-symbols-outlined text-accent">mail</span>
+                                        <span>hola@eggshop.com</span>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <span class="material-symbols-outlined text-accent">schedule</span>
+                                        <span>Lunes a Viernes: 9am - 5pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-md">
+                                <h3 class="text-2xl font-bold mb-4">Encuéntranos</h3>
+                                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                                    <div class="bg-gray-200 w-full h-full" data-alt="Mapa de ubicación de la tienda" data-location="Ciudad Ficticia" >
+                                        <img alt="Mapa de ubicación de la tienda" class="w-full h-full object-cover"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhdlNbFKz4KlrPYzKgjUtMUnZwlHGVmMmn1EWF9btTplS3q1pwi-4Yail6zhg8uDKUiX4SmnNn644GHqo3IRgr2ll_kEQ23Myx2_BJm-vv2ln3dnGSwEDR4P3TcM8C4-cj6BUFUXdsXZO2Ao6NBTlJFHytw4v8diQhR_x-DbzJxd9q0MO0a6-rHcO757x7n4D9DS8Bwzi57SqKDr44E0Mg8OyzhVQ9dHxYe4zE1_w0wDNWbqJdLZ3rF7DSpv11q7Ngb2wefTENPqg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer
+                class="bg-white dark:bg-background-dark border-t border-[#f5f3f0] dark:border-gray-700 mt-12 py-8 px-4 sm:px-10 lg:px-40">
+                <div class="max-w-6xl mx-auto text-center text-secondary dark:text-gray-400 text-sm">
+                    <div class="flex justify-center gap-6 mb-4">
+                        <a class="hover:text-primary" href="/template-ecommerce-huevos-frescos/politicas/">Política de Privacidad</a>
+                        <a class="hover:text-primary" href="/template-ecommerce-huevos-frescos/terminos/">Términos y Condiciones</a>
+                    </div>
+                    <p>© 2025 Templates Market. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../main.js"></script>
+</body>
+
+</html>

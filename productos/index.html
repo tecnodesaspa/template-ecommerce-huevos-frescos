@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Huevos Frescos - Catálogo de Productos</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;700;900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f2a60d',
+            'background-light': '#f8f7f5',
+            'background-dark': '#221c10',
+          },
+          fontFamily: {
+            display: ['Work Sans'],
+          },
+          borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
+  <div class="flex min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-6">
+            <a class="flex items-center gap-2" href="/template-ecommerce-huevos-frescos/">
+              <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+              </svg>
+              <h1 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Fresh Eggs</h1>
+            </a>
+            <nav class="hidden md:flex items-center gap-6" id="navMenu">
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/">Inicio</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/nosotros/">Acerca de nosotros</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/contacto/">Contacto</a>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="/template-ecommerce-huevos-frescos/carrito/"
+              class="flex items-center justify-center rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+              <span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100"> shopping_cart </span>
+            </a>
+            <a href="/template-ecommerce-huevos-frescos/perfil/" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+            </a>
+            <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1">
+      <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-8 lg:flex-row">
+          <aside class="w-full lg:w-64">
+            <div class="space-y-6">
+              <div>
+                <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Buscar</h2>
+                <div class="relative mt-2">
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500">
+                    search
+                  </span>
+                  <input
+                    class="w-full rounded-lg border-zinc-300 bg-zinc-100/50 py-2 pl-10 pr-4 text-zinc-900 placeholder:text-zinc-500 focus:border-primary focus:ring-primary dark:border-zinc-700 dark:bg-zinc-900/50 dark:text-zinc-100 dark:placeholder:text-zinc-400"
+                    placeholder="Buscar huevos..." type="text" />
+                </div>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Categorías</h2>
+                <div class="mt-4 space-y-2">
+                  <button
+                    class="flex w-full items-center justify-between rounded-lg bg-primary/10 px-4 py-2 text-left text-sm font-medium text-primary dark:bg-primary/20">
+                    <span>Todos</span>
+                  </button>
+                  <button
+                    class="flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-zinc-600 hover:bg-zinc-200/50 dark:text-zinc-400 dark:hover:bg-zinc-800/50">
+                    <span>Orgánicos</span>
+                  </button>
+                  <button
+                    class="flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-zinc-600 hover:bg-zinc-200/50 dark:text-zinc-400 dark:hover:bg-zinc-800/50">
+                    <span>De corral</span>
+                  </button>
+                  <button
+                    class="flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-zinc-600 hover:bg-zinc-200/50 dark:text-zinc-400 dark:hover:bg-zinc-800/50">
+                    <span>Camperos</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="flex-1">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <div
+                class="group overflow-hidden rounded-lg bg-background-light shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark">
+                <a href="/template-ecommerce-huevos-frescos/detalle-producto/">
+                  <div class="aspect-square w-full overflow-hidden">
+                    <img alt="Huevos orgánicos de granja"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBws5Gjp4_Kyrct2g_0dLNqriC6UPE4_yGeiXJyhRnPf3CGStw3B3XoFZD5HIN6vIAiAe_xiZyvLPbwW12L4PkTbuTrUoIaUHwClYbL7XSUpUuDKPjHw7_U3VFjswdKQ6ATFL9xHgryVfLE69Oc-Gv1L7FK4Opt125oYi-Fy5PYpvKhGE8gv_MoeBhY--AyWUK1uznsex1bKYtVfFObB6P_ATPA89K--Dwg4k62tKejnNAmmFQlmexnCz6wZEVmEnOUCUemw4q3NvM" />
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos orgánicos de granja</h3>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$3.50</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="group overflow-hidden rounded-lg bg-background-light shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark">
+                <a href="/template-ecommerce-huevos-frescos/detalle-producto/">
+                  <div class="aspect-square w-full overflow-hidden">
+                    <img alt="Huevos de corral frescos"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBstz4saJ1-P-qsLfAiDZmkEsRYM1fjtsLAmoNDZaZ_vF9-ow3nYnowtqDaVOz79479aALjIIVE8w93w11sHxRFhJCrTJkbYeaaT31t7-yz-wu7vT1Yru1goKHgEsCaCifNlYgZpVSyNet36OqVjjfZlUXVoTqAmGzWi_WgcE4AtaDD49VWyVJTxW1m2Ft4zt-9hERCXlkcASdtIqVhx3J0fcnfbOULX4H_jvfmFYmoTlmpwz1jTtgjrCe33g42Ky-guKCklpeR68E" />
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos de corral frescos</h3>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$2.75</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="group overflow-hidden rounded-lg bg-background-light shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark">
+                <a href="/template-ecommerce-huevos-frescos/detalle-producto/">
+                  <div class="aspect-square w-full overflow-hidden">
+                    <img alt="Huevos camperos de pastoreo libre"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN-tF946FpwcVhBTlHPcmTlHg0IvzQT9ipYSSuynFea4WgUBohAanjKXv6Prh4n0Tf8jrf65jjnbViMABMIRYAOMFUTjh8MiACxONgd_PQt9Mr0SqXnsIOp944svnsknKCm5ArEzcNm8BMX_OlU52hoXto7751qfrVs4SZq8kTFk8FFnXwMG1r_tx0RpHsTRqzvmySMJbGq21W7paytmK1XD0JGRGK3yItzEQOSjShrYopvYezt006yVXdoOX5fZpZxUVNBVGXv_Y" />
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos camperos de pastoreo libre</h3>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$4.00</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="group overflow-hidden rounded-lg bg-background-light shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark">
+                <a href="/template-ecommerce-huevos-frescos/detalle-producto/">
+                  <div class="aspect-square w-full overflow-hidden">
+                    <img alt="Huevos Omega-3"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBws5Gjp4_Kyrct2g_0dLNqriC6UPE4_yGeiXJyhRnPf3CGStw3B3XoFZD5HIN6vIAiAe_xiZyvLPbwW12L4PkTbuTrUoIaUHwClYbL7XSUpUuDKPjHw7_U3VFjswdKQ6ATFL9xHgryVfLE69Oc-Gv1L7FK4Opt125oYi-Fy5PYpvKhGE8gv_MoeBhY--AyWUK1uznsex1bKYtVfFObB6P_ATPA89K--Dwg4k62tKejnNAmmFQlmexnCz6wZEVmEnOUCUemw4q3NvM" />
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos Omega-3</h3>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Media docena</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$2.25</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="group overflow-hidden rounded-lg bg-background-light shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark">
+                <a href="/template-ecommerce-huevos-frescos/detalle-producto/">
+                  <div class="aspect-square w-full overflow-hidden">
+                    <img alt="Huevos de codorniz"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBstz4saJ1-P-qsLfAiDZmkEsRYM1fjtsLAmoNDZaZ_vF9-ow3nYnowtqDaVOz79479aALjIIVE8w93w11sHxRFhJCrTJkbYeaaT31t7-yz-wu7vT1Yru1goKHgEsCaCifNlYgZpVSyNet36OqVjjfZlUXVoTqAmGzWi_WgcE4AtaDD49VWyVJTxW1m2Ft4zt-9hERCXlkcASdtIqVhx3J0fcnfbOULX4H_jvfmFYmoTlmpwz1jTtgjrCe33g42Ky-guKCklpeR68E" />
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos de codorniz</h3>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">18 unidades</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$5.50</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="group overflow-hidden rounded-lg bg-background-light shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark">
+                <a href="/template-ecommerce-huevos-frescos/detalle-producto/">
+                  <div class="aspect-square w-full overflow-hidden">
+                    <img alt="Huevos de yema extra grande"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN-tF946FpwcVhBTlHPcmTlHg0IvzQT9ipYSSuynFea4WgUBohAanjKXv6Prh4n0Tf8jrf65jjnbViMABMIRYAOMFUTjh8MiACxONgd_PQt9Mr0SqXnsIOp944svnsknKCm5ArEzcNm8BMX_OlU52hoXto7751qfrVs4SZq8kTFk8FFnXwMG1r_tx0RpHsTRqzvmySMJbGq21W7paytmK1XD0JGRGK3yItzEQOSjShrYopvYezt006yVXdoOX5fZpZxUVNBVGXv_Y" />
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos de yema extra grande</h3>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$4.50</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="border-t border-zinc-200/50 dark:border-zinc-800/50 bg-background-light dark:bg-background-dark">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <p class="text-center text-sm text-zinc-500 dark:text-zinc-400">© 2025 Templates marketing. Todos los derechos
+          reservados.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>

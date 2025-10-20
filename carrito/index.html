@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Huevos Frescos - Tu Carrito</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2a60d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221c10",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-neutral-800 dark:text-neutral-200">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                <div class="container mx-auto px-4">
+                    <div class="flex h-16 items-center justify-between">
+                        <div class="flex items-center gap-6">
+                            <a class="flex items-center gap-2" href="/template-ecommerce-huevos-frescos/">
+                                <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                <h1 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Fresh Eggs</h1>
+                            </a>
+                            <nav class="hidden md:flex items-center gap-6" id="navMenu">
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/">Inicio</a>
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/nosotros/">Acerca de nosotros</a>
+                                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="/template-ecommerce-huevos-frescos/contacto/">Contacto</a>
+                            </nav>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <a href="/template-ecommerce-huevos-frescos/carrito/"
+                                class="flex items-center justify-center rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                                <span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100"> shopping_cart
+                                </span>
+                            </a>
+                            <a href="/template-ecommerce-huevos-frescos/perfil/"
+                                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+                            </a>
+                            <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="px-4 md:px-10 lg:px-20 xl:px-40 py-10 flex-1">
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
+                            <a class="hover:text-primary transition-colors" href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+                            <span>/</span>
+                            <span class="font-medium text-neutral-800 dark:text-white">Carrito</span>
+                        </div>
+                        <h1 class="text-4xl font-bold tracking-tight text-neutral-900 dark:text-white mt-2">Tu Carrito
+                        </h1>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 space-y-4">
+                            <div
+                                class="flex items-center justify-between gap-4 bg-white dark:bg-neutral-800/20 p-4 rounded-lg shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <img alt="Huevos Frescos de Granja" class="size-16 rounded object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1WjhOIHnml7eGOyC_sxBCK19u7S4MLtsjrpt-8b79dGF3cmV-qf16MddXzdNvuho8rChZlcjXjYovhfq9UX2vXDLBsA9QZBhnzJdqMzk_6fAwRu8uQNalBGaMibyk2iKy97kIMPYkzCJzQuV6XA8YhFi5TyUgvdXtSj7FgCTYwxKkwm3DCvhUT6O40TTwLoU8HKboe0Ok4Z0LQQwu8d-vhAZ4M5mDjxeItINrAN9ATcc6F0WmClVK3BQvpqMm4Y3piUy0bD9smQs" />
+                                    <div>
+                                        <h3 class="font-bold text-neutral-900 dark:text-white">Huevos Frescos de Granja
+                                        </h3>
+                                        <p class="text-sm text-neutral-500 dark:text-neutral-400">12 huevos</p>
+                                        <p class="text-sm font-bold text-neutral-900 dark:text-white mt-1">$7.50</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="flex items-center gap-2 rounded-full bg-background-light dark:bg-background-dark p-1">
+                                        <button
+                                            class="flex items-center justify-center size-7 rounded-full bg-white dark:bg-neutral-700/50 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors">
+                                            <span class="material-symbols-outlined text-lg">remove</span>
+                                        </button>
+                                        <input
+                                            class="w-8 p-0 text-center bg-transparent border-none focus:ring-0 text-neutral-900 dark:text-white font-medium"
+                                            readonly="" type="text" value="2" />
+                                        <button
+                                            class="flex items-center justify-center size-7 rounded-full bg-white dark:bg-neutral-700/50 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors">
+                                            <span class="material-symbols-outlined text-lg">add</span>
+                                        </button>
+                                    </div>
+                                    <button
+                                        class="text-neutral-500 dark:text-neutral-400 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                                        <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between gap-4 bg-white dark:bg-neutral-800/20 p-4 rounded-lg shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <img alt="Huevos Orgánicos" class="size-16 rounded object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1_uqEFyjt-cyfOkiiChOq5Gm-FktEzL1fLx5sMAF0pHJGEFPoDAs55T8kZY8jJC_gIG_Yg3ofYIJpa2ZwYtqmkflSrz6J0SHULcrj6nqOcpuHQuCMzsl9bxK1Iaeebru45x4UeJjM4lAp-b25kuYeBpdutzFBzPeJjzomtK-HPeDdEheLdxCAnh5j-bIuNc6eGidDb8oKbexsPGzfVlvPr3njvqdZxppkKLqWER9yzy9Ilo_M7IKVoHc4dv-PYcBUTi7AcEJbEu0" />
+                                    <div>
+                                        <h3 class="font-bold text-neutral-900 dark:text-white">Huevos Orgánicos</h3>
+                                        <p class="text-sm text-neutral-500 dark:text-neutral-400">12 huevos</p>
+                                        <p class="text-sm font-bold text-neutral-900 dark:text-white mt-1">$7.50</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="flex items-center gap-2 rounded-full bg-background-light dark:bg-background-dark p-1">
+                                        <button
+                                            class="flex items-center justify-center size-7 rounded-full bg-white dark:bg-neutral-700/50 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors">
+                                            <span class="material-symbols-outlined text-lg">remove</span>
+                                        </button>
+                                        <input
+                                            class="w-8 p-0 text-center bg-transparent border-none focus:ring-0 text-neutral-900 dark:text-white font-medium"
+                                            readonly="" type="text" value="1" />
+                                        <button
+                                            class="flex items-center justify-center size-7 rounded-full bg-white dark:bg-neutral-700/50 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors">
+                                            <span class="material-symbols-outlined text-lg">add</span>
+                                        </button>
+                                    </div>
+                                    <button
+                                        class="text-neutral-500 dark:text-neutral-400 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                                        <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-1">
+                            <div class="bg-white dark:bg-neutral-800/20 p-6 rounded-lg shadow-sm">
+                                <h3
+                                    class="text-lg font-bold text-neutral-900 dark:text-white border-b border-neutral-200 dark:border-neutral-700/50 pb-4 mb-4">
+                                    Resumen del Pedido</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between text-sm">
+                                        <p class="text-neutral-500 dark:text-neutral-400">Subtotal</p>
+                                        <p class="font-medium text-neutral-800 dark:text-neutral-100">$15.00</p>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <p class="text-neutral-500 dark:text-neutral-400">Envío</p>
+                                        <p class="font-medium text-neutral-800 dark:text-neutral-100">Gratis</p>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <p class="text-neutral-500 dark:text-neutral-400">Impuestos</p>
+                                        <p class="font-medium text-neutral-800 dark:text-neutral-100">Calculado al
+                                            finalizar compra</p>
+                                    </div>
+                                </div>
+                                <div class="border-t border-neutral-200 dark:border-neutral-700/50 mt-4 pt-4">
+                                    <div class="flex justify-between font-bold">
+                                        <p class="text-neutral-900 dark:text-white">Total</p>
+                                        <p class="text-neutral-900 dark:text-white">$15.00</p>
+                                    </div>
+                                </div>
+                                <button id="btnPay"
+                                    class="mt-6 flex w-full items-center justify-center rounded-lg h-12 px-5 bg-primary text-neutral-900 text-base font-bold hover:bg-primary/90 transition-all">
+                                    <span class="truncate">Proceder al Pago</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../main.js"></script>
+    <script>
+        document.getElementById('btnPay').addEventListener('click', function () {
+            window.location.href = "/template-ecommerce-huevos-frescos/pago/";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Huevos Frescos - Confirmación de Pedido</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;700;900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2a60d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#221c10",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#221c10] dark:text-background-light">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-6">
+            <a class="flex items-center gap-2" href="/template-ecommerce-huevos-frescos/">
+              <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor">
+                </path>
+              </svg>
+              <h1 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Fresh Eggs</h1>
+            </a>
+            <nav class="hidden md:flex items-center gap-6" id="navMenu">
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/">Inicio</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/nosotros/">Acerca de nosotros</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="/template-ecommerce-huevos-frescos/contacto/">Contacto</a>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="/template-ecommerce-huevos-frescos/carrito/"
+              class="flex items-center justify-center rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+              <span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100"> shopping_cart
+              </span>
+            </a>
+            <a href="/template-ecommerce-huevos-frescos/perfil/" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+            </a>
+            <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex flex-1 justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div class="w-full max-w-4xl space-y-12">
+        <div class="text-center">
+          <span class="material-symbols-outlined text-6xl text-primary">
+            check_circle
+          </span>
+          <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-[#221c10] dark:text-background-light">¡Gracias por
+            tu pedido!</h1>
+          <p class="mt-2 text-lg text-[#221c10]/80 dark:text-background-light/80">
+            Tu pedido ha sido realizado y está en camino. Recibirás un correo de confirmación con la información de
+            seguimiento en breve.
+          </p>
+        </div>
+        <div class="rounded-lg border border-primary/20 bg-background-light dark:bg-background-dark p-6 md:p-8">
+          <h2 class="text-2xl font-bold text-[#221c10] dark:text-background-light mb-6">Resumen del Pedido</h2>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <p class="text-sm font-medium text-[#221c10]/60 dark:text-background-light/60">Número de Pedido</p>
+              <p class="text-sm font-semibold">#123456</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-sm font-medium text-[#221c10]/60 dark:text-background-light/60">Fecha del Pedido</p>
+              <p class="text-sm">26 de Julio, 2024</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-sm font-medium text-[#221c10]/60 dark:text-background-light/60">Método de Pago</p>
+              <p class="text-sm">Tarjeta de Crédito</p>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-lg font-bold text-[#221c10] dark:text-background-light mb-4">Artículos Pedidos</h3>
+            <div class="flow-root">
+              <ul class="-my-4 divide-y divide-primary/20" role="list">
+                <li class="flex items-center py-4">
+                  <div class="h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg bg-primary/10">
+                    <img alt="Organic Eggs" class="h-full w-full object-cover object-center"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6E0mviRD0PyWtiw2ezgM6t3-EmSTw8ouUbFrBjY9L2wyGqtaHosdkAuy8gYervUMRo7BiWOmCMKbIrnXL0T2lVm6lot_SYsRS89ub6BhwbntYL-8vzCR8kCBrBdcvrHVdpjQNRP_ns3ibkx_15WFxw4twB1fVN310XTs0DEtx6pxTdV3pHnlTJuLi65lxFJ9GuaIU2FiYjzmwOUQVM-QyPHweZWQSLYQsyP1V6rrFR9B4Tij3hyfFfJUeeBSc2j97Sda6lQo9KAs" />
+                  </div>
+                  <div class="ml-4 flex flex-1 flex-col">
+                    <div>
+                      <div class="flex justify-between text-base font-medium">
+                        <h3><a href="#">Huevos Orgánicos (Docena)</a></h3>
+                        <p class="ml-4">$16.00</p>
+                      </div>
+                      <p class="mt-1 text-sm text-[#221c10]/60 dark:text-background-light/60">Cantidad: 2</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="flex items-center py-4">
+                  <div class="h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg bg-primary/10">
+                    <img alt="Free-Range Eggs" class="h-full w-full object-cover object-center"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ4zQrAsByOrpuJjOSDwZVTevPdwvPnlElQCG1qH0Mm1iKPZVr11QWJIwk7BfJ85lbYtF4ReUWpwPyx2COrdv5QxtSdE32hZQ8Igm_JyzHUnYZyuAGziDYQIddDvZM5eq_QJNCvApUmx-eb7oAQVH3Rqp-I421pr4IZnI2Bfr2Y3s5OdlpFHXnK1lB7aIV2TPvVdd31zRrvOH_6n-aYZe307ltJUQLxhyPq5Jaa_IMs0BDSdmVgX27rAvNGEPxT7y_gxLWUpVVjkU" />
+                  </div>
+                  <div class="ml-4 flex flex-1 flex-col">
+                    <div>
+                      <div class="flex justify-between text-base font-medium">
+                        <h3><a href="#">Huevos de Corral (Media Docena)</a></h3>
+                        <p class="ml-4">$4.50</p>
+                      </div>
+                      <p class="mt-1 text-sm text-[#221c10]/60 dark:text-background-light/60">Cantidad: 1</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-8 border-t border-primary/20 pt-6 space-y-2">
+            <div class="flex justify-between text-sm">
+              <p class="text-[#221c10]/60 dark:text-background-light/60">Subtotal</p>
+              <p>$20.50</p>
+            </div>
+            <div class="flex justify-between text-sm">
+              <p class="text-[#221c10]/60 dark:text-background-light/60">Envío</p>
+              <p>$5.00</p>
+            </div>
+            <div class="flex justify-between text-sm">
+              <p class="text-[#221c10]/60 dark:text-background-light/60">Impuestos</p>
+              <p>$1.50</p>
+            </div>
+            <div class="flex justify-between text-base font-bold">
+              <p>Total</p>
+              <p>$27.00</p>
+            </div>
+          </div>
+          <div class="mt-8 border-t border-primary/20 pt-6">
+            <h3 class="text-lg font-bold text-[#221c10] dark:text-background-light mb-4">Información de Envío</h3>
+            <div class="text-sm text-[#221c10]/80 dark:text-background-light/80">
+              <p class="font-medium">Emily Carter</p>
+              <p>123 Main Street</p>
+              <p>Anytown, CA 91234</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="text-base text-[#221c10]/80 dark:text-background-light/80">
+            Tu pedido será entregado en 3-5 días hábiles. ¡Agradecemos tu compra!
+          </p>
+          <a class="mt-6 inline-block rounded-lg bg-primary px-8 py-3 text-base font-bold text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors"
+            href="/template-ecommerce-huevos-frescos/">
+            Continuar Comprando
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>

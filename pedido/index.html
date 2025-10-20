@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Huevos Frescos - Pedido</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2a60d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#221c10",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center gap-6">
+              <a class="flex items-center gap-2" href="/template-ecommerce-huevos-frescos/">
+                <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+                </svg>
+                <h1 class="text-xl font-bold text-zinc-900 dark:text-zinc-100">Huevos Frescos</h1>
+              </a>
+              <nav class="hidden md:flex items-center gap-6" id="navMenu">
+                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                  href="/template-ecommerce-huevos-frescos/">Inicio</a>
+                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                  href="/template-ecommerce-huevos-frescos/productos/">Productos</a>
+                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                  href="/template-ecommerce-huevos-frescos/nosotros/">Acerca de nosotros</a>
+                <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors"
+                  href="/template-ecommerce-huevos-frescos/contacto/">Contacto</a>
+              </nav>
+            </div>
+            <div class="flex items-center gap-4">
+              <a href="/template-ecommerce-huevos-frescos/carrito/"
+                class="flex items-center justify-center rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                <span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100"> shopping_cart
+                </span>
+              </a>
+              <a href="/template-ecommerce-huevos-frescos/perfil/" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+              </a>
+              <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="px-4 sm:px-6 lg:px-10 py-8 lg:py-12">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center text-sm mb-6">
+            <a class="text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Mi Cuenta</a>
+            <span class="mx-2 text-gray-400 dark:text-gray-500">/</span>
+            <span class="text-gray-800 dark:text-gray-200">Pedidos</span>
+          </div>
+          <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Pedido #123456</h1>
+            <p class="text-gray-500 dark:text-gray-400 mt-1">Realizado el 20 de julio, 2024</p>
+          </div>
+          <div class="space-y-10">
+            <div
+              class="bg-white dark:bg-background-dark/50 rounded-lg shadow-sm border border-primary/20 dark:border-primary/30 overflow-hidden">
+              <h3
+                class="text-lg font-bold p-4 sm:p-6 border-b border-primary/20 dark:border-primary/30 text-gray-900 dark:text-white">
+                Detalles del Pedido</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                  <thead class="bg-primary/10 dark:bg-primary/20">
+                    <tr>
+                      <th class="px-6 py-3 text-left font-medium text-gray-600 dark:text-gray-300">Producto</th>
+                      <th class="px-6 py-3 text-left font-medium text-gray-600 dark:text-gray-300">Cantidad</th>
+                      <th class="px-6 py-3 text-left font-medium text-gray-600 dark:text-gray-300">Precio</th>
+                      <th class="px-6 py-3 text-left font-medium text-gray-600 dark:text-gray-300">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-primary/20 dark:divide-primary/30">
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-gray-800 dark:text-gray-200">Huevos Orgánicos Marrones</td>
+                      <td class="px-6 py-4 text-gray-600 dark:text-gray-400">1 docena</td>
+                      <td class="px-6 py-4 text-gray-600 dark:text-gray-400">$4.99</td>
+                      <td class="px-6 py-4 text-gray-600 dark:text-gray-400">$4.99</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-gray-800 dark:text-gray-200">Huevos Blancos de Granja</td>
+                      <td class="px-6 py-4 text-gray-600 dark:text-gray-400">2 docenas</td>
+                      <td class="px-6 py-4 text-gray-600 dark:text-gray-400">$3.99</td>
+                      <td class="px-6 py-4 text-gray-600 dark:text-gray-400">$7.98</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+              <div
+                class="bg-white dark:bg-background-dark/50 rounded-lg shadow-sm border border-primary/20 dark:border-primary/30">
+                <h3
+                  class="text-lg font-bold p-4 sm:p-6 border-b border-primary/20 dark:border-primary/30 text-gray-900 dark:text-white">
+                  Envío</h3>
+                <div class="p-4 sm:p-6 space-y-4 text-sm">
+                  <div class="flex justify-between">
+                    <p class="text-gray-500 dark:text-gray-400">Estado</p>
+                    <p class="font-medium text-gray-800 dark:text-gray-200">Enviado</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-gray-500 dark:text-gray-400">Dirección</p>
+                    <p class="font-medium text-gray-800 dark:text-gray-200 text-right">Calle de la Granja 123, Tu Ciudad, CA 91234
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white dark:bg-background-dark/50 rounded-lg shadow-sm border border-primary/20 dark:border-primary/30">
+                <h3
+                  class="text-lg font-bold p-4 sm:p-6 border-b border-primary/20 dark:border-primary/30 text-gray-900 dark:text-white">
+                  Facturación</h3>
+                <div class="p-4 sm:p-6 space-y-4 text-sm">
+                  <div class="flex justify-between">
+                    <p class="text-gray-500 dark:text-gray-400">Método de Pago</p>
+                    <p class="font-medium text-gray-800 dark:text-gray-200">Tarjeta de Crédito</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-gray-500 dark:text-gray-400">Dirección de Facturación</p>
+                    <p class="font-medium text-gray-800 dark:text-gray-200 text-right">Calle de la Granja 123, Tu Ciudad, CA 91234
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-background-dark/50 rounded-lg shadow-sm border border-primary/20 dark:border-primary/30">
+              <h3
+                class="text-lg font-bold p-4 sm:p-6 border-b border-primary/20 dark:border-primary/30 text-gray-900 dark:text-white">
+                Resumen del Pedido</h3>
+              <div class="p-4 sm:p-6 space-y-3 text-sm">
+                <div class="flex justify-between">
+                  <p class="text-gray-500 dark:text-gray-400">Subtotal</p>
+                  <p class="font-medium text-gray-800 dark:text-gray-200">$12.97</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="text-gray-500 dark:text-gray-400">Envío</p>
+                  <p class="font-medium text-gray-800 dark:text-gray-200">$0.00</p>
+                </div>
+                <div
+                  class="flex justify-between pt-3 border-t border-primary/20 dark:border-primary/30 text-base font-bold">
+                  <p class="text-gray-800 dark:text-gray-200">Total</p>
+                  <p class="text-gray-800 dark:text-gray-200">$12.97</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-start">
+              <button id="btnContact"
+                class="flex items-center justify-center rounded-lg h-11 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90">
+                Contactar Soporte
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../main.js"></script>
+  <script>
+    document.getElementById('btnContact').addEventListener('click', function() {
+      window.location.href = '/template-ecommerce-huevos-frescos/contacto/';
+    });
+  </script>
+</body>
+
+</html>
