@@ -29,6 +29,28 @@
     };
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<style>
+/* Responsive layout: preserve content and keep controls within the viewport. */
+:where(main, section, article, aside, header, footer, nav, form, fieldset, .flex > *, .grid > *) { min-width: 0; }
+img, video, iframe { max-width: 100%; }
+:where(input, select, textarea) { max-width: 100%; }
+:where(p, h1, h2, h3, a, label) { overflow-wrap: break-word; }
+@media (max-width: 767px) {
+  .px-40, .px-20, .px-16, .px-12, .px-10 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  [class*="min-w-["] { min-width: 0 !important; }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+  .toast-notification { max-width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* Tablet navigation, footer wrapping, and decorative accents. */
+.material-symbols-outlined { flex-shrink: 0; overflow-wrap: normal; white-space: nowrap; }
+footer li, footer a { overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  footer .md\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .absolute.-right-6 { right: 0; }
+}
+</style>
+<meta name="currency" content="CLP">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
@@ -125,7 +147,7 @@
                   <div class="p-4">
                     <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos orgánicos de granja</h3>
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
-                    <p class="mt-2 text-lg font-bold text-primary">$3.50</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$3.500</p>
                   </div>
                 </a>
               </div>
@@ -140,7 +162,7 @@
                   <div class="p-4">
                     <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos de corral frescos</h3>
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
-                    <p class="mt-2 text-lg font-bold text-primary">$2.75</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$2.750</p>
                   </div>
                 </a>
               </div>
@@ -155,7 +177,7 @@
                   <div class="p-4">
                     <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos camperos de pastoreo libre</h3>
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
-                    <p class="mt-2 text-lg font-bold text-primary">$4.00</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$4.000</p>
                   </div>
                 </a>
               </div>
@@ -170,7 +192,7 @@
                   <div class="p-4">
                     <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos Omega-3</h3>
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Media docena</p>
-                    <p class="mt-2 text-lg font-bold text-primary">$2.25</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$2.250</p>
                   </div>
                 </a>
               </div>
@@ -185,7 +207,7 @@
                   <div class="p-4">
                     <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos de codorniz</h3>
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">18 unidades</p>
-                    <p class="mt-2 text-lg font-bold text-primary">$5.50</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$5.500</p>
                   </div>
                 </a>
               </div>
@@ -200,7 +222,7 @@
                   <div class="p-4">
                     <h3 class="font-semibold text-zinc-800 dark:text-zinc-200">Huevos de yema extra grande</h3>
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Una docena</p>
-                    <p class="mt-2 text-lg font-bold text-primary">$4.50</p>
+                    <p class="mt-2 text-lg font-bold text-primary">$4.500</p>
                   </div>
                 </a>
               </div>

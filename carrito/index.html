@@ -34,6 +34,28 @@
             },
         }
     </script>
+<style>
+/* Responsive layout: preserve content and keep controls within the viewport. */
+:where(main, section, article, aside, header, footer, nav, form, fieldset, .flex > *, .grid > *) { min-width: 0; }
+img, video, iframe { max-width: 100%; }
+:where(input, select, textarea) { max-width: 100%; }
+:where(p, h1, h2, h3, a, label) { overflow-wrap: break-word; }
+@media (max-width: 767px) {
+  .px-40, .px-20, .px-16, .px-12, .px-10 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  [class*="min-w-["] { min-width: 0 !important; }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+  .toast-notification { max-width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* Tablet navigation, footer wrapping, and decorative accents. */
+.material-symbols-outlined { flex-shrink: 0; overflow-wrap: normal; white-space: nowrap; }
+footer li, footer a { overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  footer .md\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .absolute.-right-6 { right: 0; }
+}
+</style>
+<meta name="currency" content="CLP">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-neutral-800 dark:text-neutral-200">
@@ -105,7 +127,7 @@
                                         <h3 class="font-bold text-neutral-900 dark:text-white">Huevos Frescos de Granja
                                         </h3>
                                         <p class="text-sm text-neutral-500 dark:text-neutral-400">12 huevos</p>
-                                        <p class="text-sm font-bold text-neutral-900 dark:text-white mt-1">$7.50</p>
+                                        <p class="text-sm font-bold text-neutral-900 dark:text-white mt-1">$7.500</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2">
@@ -137,7 +159,7 @@
                                     <div>
                                         <h3 class="font-bold text-neutral-900 dark:text-white">Huevos Orgánicos</h3>
                                         <p class="text-sm text-neutral-500 dark:text-neutral-400">12 huevos</p>
-                                        <p class="text-sm font-bold text-neutral-900 dark:text-white mt-1">$7.50</p>
+                                        <p class="text-sm font-bold text-neutral-900 dark:text-white mt-1">$7.500</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2">
@@ -170,7 +192,7 @@
                                 <div class="space-y-3">
                                     <div class="flex justify-between text-sm">
                                         <p class="text-neutral-500 dark:text-neutral-400">Subtotal</p>
-                                        <p class="font-medium text-neutral-800 dark:text-neutral-100">$15.00</p>
+                                        <p class="font-medium text-neutral-800 dark:text-neutral-100">$15.000</p>
                                     </div>
                                     <div class="flex justify-between text-sm">
                                         <p class="text-neutral-500 dark:text-neutral-400">Envío</p>
@@ -185,7 +207,7 @@
                                 <div class="border-t border-neutral-200 dark:border-neutral-700/50 mt-4 pt-4">
                                     <div class="flex justify-between font-bold">
                                         <p class="text-neutral-900 dark:text-white">Total</p>
-                                        <p class="text-neutral-900 dark:text-white">$15.00</p>
+                                        <p class="text-neutral-900 dark:text-white">$15.000</p>
                                     </div>
                                 </div>
                                 <button id="btnPay"
